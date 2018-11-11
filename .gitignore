@@ -1,0 +1,8 @@
+*.log
+.env
+.nuxt
+.firebase
+.firebaserc
+.runtimeconfig.json
+node_modules/
+dist/

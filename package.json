@@ -1,0 +1,46 @@
+{
+  "name": "meat-sauce",
+  "version": "1.0.0",
+  "description": "meat source or bolognese",
+  "author": "noplan1989",
+  "scripts": {
+    "dev": "nuxt",
+    "serve": "firebase serve",
+    "generate": "nuxt generate",
+    "deploy": "firebase deploy --only hosting",
+    "format": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/dotenv": "^1.3.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "nuxt-sass-resources-loader": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.15.1",
+    "sass-loader": "^7.1.0"
+  }
+}
